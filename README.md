@@ -23,7 +23,7 @@ when fetching the post we should also get the username who created a post and cr
 
 
 ENDPOINTS:
-(GET) http://{domain}/posts/get/:title
+(GET) http://{domain}/posts/get/:title	
 (GET) http://{domain}/posts/get
 (GET) http://{domain}/posts/search/searchKey
 (GET) http://{domain}/posts/by-tag/haha,bojour (multiple tags can be specified using comma)
