@@ -3,7 +3,6 @@ import mongoose from "mongoose";
 import Post from "../models/Post";
 
 const readSingle = (req: Request, res: Response, next: NextFunction) => {
-  console.log("me");
   const title = req.params.title;
   return Post.find({ title: { $regex: title, $options: "i" } })
     .then((posts) => res.status(200).json({ posts }))
